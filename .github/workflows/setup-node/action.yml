@@ -1,0 +1,20 @@
+name: setup-node
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.JS
+      uses: actions/setup-node@v4
+      with:
+        node-version: 23
+
+    - name: Cache Dependencies
+      id: cache_deps
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: node-modules-${{ hashFiles('package-lock.json') }}
+
+    - name: Install Deps
+      shell: bash
+      if: steps.cache_deps.outputs.cache-hit != 'true'
+      run: npm ci
