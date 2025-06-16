@@ -23,4 +23,8 @@ export default class GitRepo {
 		};
 		this.HEAD = commit_hash // Update HEAD to new commit
 	}
+
+	get head() {
+		return this.HEAD;
+	}
 }

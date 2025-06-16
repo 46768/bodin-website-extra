@@ -7,7 +7,7 @@ import Paragraph from "@/components/Paragraph";
 import MenuLink from "@/components/head/MenuLink";
 
 export default function Basics() {
-	const [n, _setN] = useSearchParams();
+	const [n] = useSearchParams();
 	let rawClassNum: Array<string> | undefined = n
 	if (n == undefined) {
 		rawClassNum = ['-1']
