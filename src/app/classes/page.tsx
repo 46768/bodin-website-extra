@@ -5,7 +5,7 @@ export default function Home() {
 		<div className="font-[family-name:var(--font-geist-sans)]">
 		<main>
 			<p className="text-xl">Classes:</p>
-			<ButtonLink href="/classes/class/basics" label="Basics"/>
+			<ButtonLink href="/classes/class/basics?1" label="Basics"/>
 		</main>
 		</div>
 	);

@@ -5,6 +5,7 @@ const char_map: string = "0123456789abcdef";
 export default class GitRepo {
 	private commits: Record<string, Commit> = {};
 	private HEAD: string = "";
+	private branches: Record<string, string> = {};
 
 	constructor() {}
 

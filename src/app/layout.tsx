@@ -37,11 +37,6 @@ export default function RootLayout({
 					<MenuLink href="https://git-scm.com/downloads">Get Git</MenuLink>
 				</NavBar>
 				{children}
-				<footer>
-				This website is not associated with git, This is simply a class
-				work i have to do. Also im using my current knowledge for this
-				and might not be best practices
-				</footer>
 			</body>
 		</html>
 	);
