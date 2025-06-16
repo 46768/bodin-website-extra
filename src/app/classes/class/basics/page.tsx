@@ -4,11 +4,10 @@ import RepoDisplay from "@/components/repo_display";
 import GitRepo from "@/components/repo";
 import Title from "@/components/text/Title";
 import Paragraph from "@/components/Paragraph";
-import ButtonLink from "@/components/ButtonLink";
 import MenuLink from "@/components/head/MenuLink";
 
 export default function Basics() {
-	let [n, setN] = useSearchParams();
+	const [n, _setN] = useSearchParams();
 	let rawClassNum: Array<string> | undefined = n
 	if (n == undefined) {
 		rawClassNum = ['-1']
